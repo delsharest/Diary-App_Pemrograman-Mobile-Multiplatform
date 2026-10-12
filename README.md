@@ -1,4 +1,4 @@
-# Diary App — Praktikum Pertemuan 2
+# Diary App — Praktikum Pertemuan 1
 
 **Mata kuliah:** Pemrograman Mobile Multiplatform  
 **Nama:** Fadhla Rahayu Alfairuz  
