@@ -1,32 +1,30 @@
-# Diary App — Praktikum Pertemuan 2
+# Diary App - Praktikum Pertemuan 2 & 3
 
-**Mata kuliah:** Pemrograman Mobile Multiplatform  
+**Mata Kuliah:** Pemrograman Mobile Multiplatform  
 **Nama:** Fadhla Rahayu Alfairuz  
 **NIM:** 2430511007
 
 ## Deskripsi
-Aplikasi daftar buku harian statis menggunakan React Native dan Expo CLI. Aplikasi menampilkan 5 entri buku harian dengan gambar, tanggal, ringkasan, dan variasi tampilan berdasarkan mood.
+Diary App adalah aplikasi buku harian sederhana yang dibuat menggunakan React Native dan Expo CLI. Aplikasi ini merupakan lanjutan dari praktikum pertemuan 2 yang dikembangkan pada pertemuan 3 dengan tampilan responsif dan fitur detail diary.
 
-## Cara menjalankan
-1. Pastikan Node.js LTS dan Expo Go sudah terpasang.
-2. Buka folder `diary-app` dengan VS Code.
-3. Jalankan `npm install` pada terminal di folder ini.
-4. Jalankan `npx expo start`.
-5. Pindai QR code dengan Expo Go (pastikan laptop dan HP dapat terhubung).
+## Fitur Aplikasi
+- Menampilkan 7 entri diary beserta gambar, tanggal, dan ringkasan.
+- Menggunakan komponen DiaryCard dan DiaryDetailModal.
+- Menggunakan FlatList dengan tampilan 1 dan 2 kolom.
+- Menampilkan detail diary ketika kartu ditekan.
+- Menggunakan StyleSheet, Flexbox, dan design tokens.
+- Menampilkan gambar mood, avatar, serta warna border yang berbeda.
 
-## Fitur yang diselesaikan
-- Menampilkan **5 entri diary statis** dalam `ScrollView`.
-- Menggunakan komponen reusable `src/components/DiaryCard.js` dan `props`.
-- Menampilkan gambar mood, judul, tanggal, dan ringkasan maksimal 3 baris.
-- Menggunakan **gambar lokal** `assets/moods/happy.png` pada salah satu entri.
-- Menampilkan **avatar** di header dari `assets/avatar.png`.
-- Menggunakan **warna border kiri yang berbeda** sesuai mood kartu.
-- Styling menggunakan `StyleSheet` dan layout `Flexbox`.
+## Cara Menjalankan
+1. Buka folder project di VS Code.
+2. Jalankan `npm install` melalui terminal.
+3. Jalankan `npx expo start`.
+4. Scan QR code menggunakan Expo Go.
 
-## Dokumentasi Pengujian
-Aplikasi Diary App telah berhasil dijalankan menggunakan Expo Go pada perangkat Android. Pengujian menunjukkan bahwa aplikasi mampu menampilkan lima entri buku harian, gambar mood, avatar pengguna, serta variasi warna border pada setiap kartu.
+## Layout Responsif
+Aplikasi menggunakan `useWindowDimensions()` dengan breakpoint 600 dp. Jika lebar layar kurang dari 600 dp, diary ditampilkan dalam 1 kolom. Jika lebar layar mencapai 600 dp atau lebih, diary ditampilkan dalam 2 kolom.
 
-Hasil screenshot pengujian disimpan dalam folder `screenshots/` sebagai bukti aplikasi telah berhasil dijalankan.
+## Hasil Pengujian
+Aplikasi berhasil dijalankan melalui Expo Go. Tampilan portrait menampilkan 1 kolom, sedangkan landscape menampilkan 2 kolom. Kartu diary juga dapat ditekan untuk membuka modal detail.
 
-## Catatan
-Gambar mood pada empat entri lainnya menggunakan URL `picsum.photos`, sehingga membutuhkan akses internet untuk tampil. Project ini merupakan daftar statis dan belum memiliki fitur tambah/edit entri.
+Screenshot hasil pengujian terdapat pada folder `screenshots/`.
